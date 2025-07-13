@@ -7,7 +7,7 @@ import 'package:new_app_project/utils/common/controllers_initializations.dart';
 import 'package:new_app_project/utils/routes/routes.dart';
 import 'features/theme/app_theme.dart';
 import 'firebase_options.dart';
-
+import 'package:flutter/foundation.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -17,7 +17,8 @@ void main() async {
 
   runApp(
     DevicePreview(
-      enabled: false,
+      // enabled: false,
+      enabled: !kReleaseMode,
       builder: (context) => ScreenUtilInit(
         designSize: const Size(360, 690),
         minTextAdapt: true,
