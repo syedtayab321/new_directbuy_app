@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:new_app_project/controllers/message/message_controller.dart';
+import 'package:new_app_project/repositories/message/message_repository.dart';
 import '../../controllers/auth/auth_controller.dart';
 import '../../controllers/cart/cart_controller.dart';
 import '../../controllers/home/home_controller.dart';
@@ -40,6 +42,9 @@ class DependencyInjection {
 
     Get.lazyPut(()=> ProfileController(), fenix: true);
     Get.lazyPut(()=> ProfileRepository(), fenix: true);
+
+    Get.lazyPut(()=> MessageController(), fenix: true);
+    Get.lazyPut(()=> MessageRepository(), fenix: true);
 
     // Add other controllers here as needed
     // Get.lazyPut(() => OtherController(), fenix: true);
