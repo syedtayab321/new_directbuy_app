@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968810401363",
+    "project_id": "directbuy-2f04c",
+    "storage_bucket": "directbuy-2f04c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968810401363:android:e5fc309edf9a00df0180a6",
+        "android_client_info": {
+          "package_name": "com.example.new_app_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0K5UR6CFZlxImj278tRpLlTbZ6yiOvLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
